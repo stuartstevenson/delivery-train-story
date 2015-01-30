@@ -1,10 +1,10 @@
-# How do I deliver coal from the mine to peoples home in the city? 
+# How do we deliver coal from the mine to peoples home in the city? 
 
 Let's say we have a train engine that leaves every 10 days for the city. We spend two weeks mining coal and putting it in the cars. Any coal we mine after the train leaves has to go in the cars for the next train in two weeks time.
 
 The train then takes 4 days to reach the city. This means in total the end user of the coal has to wait 14 days for their coal.
 
-##So how do we make more money?
+###So how do we make more money?
 
 What if another company comes along and says they can give the user coal every 10 days? Well that means the user has to wait less time when they run out of coal.
 
@@ -32,7 +32,7 @@ By halving our batch size again we achieve a wait for our users of 2.5 days. We'
 
 Isn't this great? Look at how fast we can get our coal to our users! Now we have optimised our flow from coalface to fireplace. 
 
-##So how do we make more money?
+###So how do we make more money?
 
 One option could be to build another train line in parallel to the first. This is likely to be prohibitively expensive to scale. Also we are working our train pretty hard and so downtime for maintenance will impact on our profitability. So what are the other options?
 
@@ -47,4 +47,4 @@ Trucks they can be loaded in parallel and leave as soon as they are ready. Maybe
 
 Now we are delivering coal constantly to our users and have a robust system to do so.
 
-##So how do we make more money?
+###So how do we make more money?
