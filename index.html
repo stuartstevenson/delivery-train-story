@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Delivery-train-story : An story about delivering faster.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Delivery-train-story</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/stuartstevenson/delivery-train-story">View on GitHub</a>
+
+          <h1 id="project_title">Delivery-train-story</h1>
+          <h2 id="project_tagline">An story about delivering faster.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/stuartstevenson/delivery-train-story/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/stuartstevenson/delivery-train-story/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="how-do-we-deliver-coal-from-the-mine-to-peoples-home-in-the-city" class="anchor" href="#how-do-we-deliver-coal-from-the-mine-to-peoples-home-in-the-city" aria-hidden="true"><span class="octicon octicon-link"></span></a>How do we deliver coal from the mine to peoples home in the city?</h1>
+
+<p>Let's say we have a train engine that leaves every 10 days for the city. We spend two weeks mining coal and putting it in the cars. Any coal we mine after the train leaves has to go in the cars for the next train in two weeks time.</p>
+
+<p>The train then takes 4 days to reach the city. This means in total the end user of the coal has to wait 14 days for their coal.</p>
+
+<h3>
+<a id="so-how-do-we-make-more-money" class="anchor" href="#so-how-do-we-make-more-money" aria-hidden="true"><span class="octicon octicon-link"></span></a>So how do we make more money?</h3>
+
+<p>What if another company comes along and says they can give the user coal every 10 days? Well that means the user has to wait less time when they run out of coal.</p>
+
+<p>So how do we compete with that? One option is to deliver more coal each time. We hire more miners who fill up our train. Another option is to better incentivize our miners to work more productively. This means that every 14 days we deliver more coal to our users.</p>
+
+<p>But is this what the user wanted? It took time to hire more miners, and for the mine to increase its output and it still took 14 for it to get to the user, only to find the user didn't want more coal, they wanted it faster.</p>
+
+<p>So how do we get coal to the user faster?</p>
+
+<p>Well we could make the train run faster. It turns out 2 of the 4 days the train is spent in sidings as the driver can't spend more than 12 hours a day working. So we hire another driver. Now the train takes 2 days and the user gets their coal in 12 days. It better but it's not better than 10.</p>
+
+<p>Next we find out that 10 days worth of coal is really heavy and it slows the train down. It turns out we have a pretty fast train that could do the journey in 2 hours if it wasn't for heavy load. So it turns out speeding up the train by replacing it won't make much difference to the user.</p>
+
+<p>So to make the train run faster we need to lighten the load. We start by halving the load and the train takes a day. This means that for 5 days of coal, we can deliver to the user 1 day faster. That's now a 6 day cycle time. </p>
+
+<p>But we only delivered half the coal, what about the rest. Well as the train has done its job after 6 days, it can go back to the mine to be filled up again to perform another delivery in another 6 days. After 12 days we deliver the same amount of coal.</p>
+
+<p>Over a 12 day period both approaches had the same result. So was there any point in trying the second approach? Well let's think about our users. In the second approach the users got less coal faster. If they ran out before the second delivery they had less time to wait. Or they wanted a slightly blacker shade of coal they had to wait less time for the mine to deliver it to them.</p>
+
+<p>Most importantly our company can react faster than our competitor. Time to market is key. So what happens when another competitor turns up and has a 4 day wait time. Well let's repeat our process.</p>
+
+<p>By halving our batch size again we achieve a wait for our users of 2.5 days. We've got the hang of this now so why don't we just reduce our Batch size to be able to deliver a train load as fast as we can. This would be the amount of coal we can load in 4 hours. Now we can do multiple small deliveries each day and still deliver that same amount over 12 days.</p>
+
+<p>Isn't this great? Look at how fast we can get our coal to our users! Now we have optimised our flow from coalface to fireplace. </p>
+
+<h3>
+<a id="so-how-do-we-make-more-money-1" class="anchor" href="#so-how-do-we-make-more-money-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>So how do we make more money?</h3>
+
+<p>One option could be to build another train line in parallel to the first. This is likely to be prohibitively expensive to scale. Also we are working our train pretty hard and so downtime for maintenance will impact on our profitability. So what are the other options?</p>
+
+<p>Well we could invest in our train. Let's get a super reliable super fast bullet train and bring our wait time down to 1 hour. But what if a tree falls on the track? We could invest in our tracks again.</p>
+
+<p>We know there will always be something that derails our trains.</p>
+
+<p>The way we scale is to again look at what our users want. If the train line is down the users don't get their coal. How do we make our deliveries more robust for our users? We could change our delivery mechanism to be less constrained. Why don't we use trucks to deliver our coal?</p>
+
+<p>Trucks they can be loaded in parallel and leave as soon as they are ready. Maybe they are slightly slower per delivery but the frequency due to parallelisation means the user gets coal at least as frequent as before. However now we have the redundancy in our system. If a truck breaks down it doesn't delay all other deliveries like our one train engine.</p>
+
+<p>Now we are delivering coal constantly to our users and have a robust system to do so.</p>
+
+<h3>
+<a id="so-how-do-we-make-more-money-2" class="anchor" href="#so-how-do-we-make-more-money-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>So how do we make more money?</h3>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Delivery-train-story maintained by <a href="https://github.com/stuartstevenson">stuartstevenson</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
